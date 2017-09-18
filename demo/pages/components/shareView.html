@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../../css/index.css" />
+		<style>
+			html,
+			body {
+				height: 100%;
+				width: 100%;
+			}
+			
+			.mui-content {
+				height: 100%;
+				width: 100%;
+				position: relative;
+				background: rgba(0, 0, 0, 0);
+			}
+			
+			.bottom-popver {
+				height: 210px;
+				z-index: 99999;
+				width: 100%;
+			}
+			
+			.share-area {
+				height: 100px;
+				box-sizing: content-box;
+				display: flex !important;
+				align-items: center;
+				justify-content: center;
+				width: 100%;
+				padding-top: 35px;
+				padding-bottom: 25px;
+				background: #fff;
+				border-radius: 10px 10px 0 0;
+			}
+			
+			.share-item {
+				display: flex;
+				flex: 1;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+			}
+			
+			.share-img {
+				width: 65px;
+				height: 65px;
+				margin-bottom: 10px;
+			}
+			
+			.share-text {
+				display: block;
+				text-align: center;
+				font-size: 16px;
+				line-height: 18px;
+				height: 10px;
+			}
+			
+			.press-join:active {
+				background-color: #eb5d04;
+			}
+			
+			.join-btn {
+				height: 50px;
+				background-color: #fa6b11;
+				font-size: .36rem;
+				line-height: 50px;
+				color: #fff;
+				width: 100%;
+				text-align: center;
+				font-weight: bold;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div id="popover" class="bottom-popver" style="border-radius: 0;">
+				<!--<span class="share-text">分享到</span>-->
+				<div class="share-area">
+					<div class="share-item share-btn" data-share='weixin' data-ex='WXSceneSession'>
+						<img class="share-img" src='../../images/wechat_share.png' />
+						<span>微信好友</span>
+					</div>
+					<div class="share-item share-btn" data-share='weixin' data-ex='WXSceneTimeline'>
+						<img class="share-img" src="../../images/wechat_moment.png" />
+						<span>微信朋友圈</span>
+					</div>
+					<div class="share-item share-btn" data-share='qq'>
+						<img class="share-img" src="../../images/qq.png" />
+						<span>QQ好友</span>
+					</div>
+				</div>
+				<div class="join-btn press-join" id="cancel">
+					取消
+				</div>
+			</div>
+		</div>
+		<script src="../../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+			var shares = null,
+				self = null,
+				opner = null;
+			mui.plusReady(function() {
+				self = plus.webview.currentWebview();
+				plus.share.getServices(function(s) {
+					//					console.log(JSON.stringify(s));
+					shares = {};
+					for(var i in s) {
+						var t = s[i];
+						shares[t.id] = t;
+					}
+				}, function(e) {
+					plus.nativeUI.toast("获取分享服务列表失败：" + e.message);
+				});
+
+				//监听后台切换到前台事件，用于处理用户分享后，没选择返回app的情况
+				document.addEventListener("resume", function(event) {
+					mui.back();
+					plus.nativeUI.closeWaiting();
+				}, false);
+			})
+			var message = null;
+			window.addEventListener('getMessage', function(e) {
+				var msg = e.detail.msg;
+				if(Object.keys(msg).length > 0) {
+					message = msg;
+					opner = plus.webview.getWebviewById(e.detail.opner);
+				}
+				console.log(JSON.stringify(message));
+			})
+
+			var shareArea = document.querySelector('.share-area');
+			mui(shareArea).on('tap', '.share-btn', function(e) {
+				if(!shares) {
+					plus.nativeUI.toast("获取分享服务失败");
+				}
+				plus.nativeUI.showWaiting();
+				var ex = this.dataset.ex;
+				var shareId = this.dataset.share;
+				var share_message = shares[shareId];
+				console.log(ex);
+				//if(share_message.authenticated) {
+				//发送分享
+				var msg = {
+					href: 'http://www.clarc.cn/',
+					title: '千语街',
+					content: '我在千语街-多语言学习专家发现了一个有趣的课程，你也来看看',
+					thumbs: ['http://qianyujie-1253376219.cosgz.myqcloud.com/logo/weixin-logo.png'],
+					pictures: ['http://qianyujie-1253376219.cosgz.myqcloud.com/logo/weixin-logo.png'],
+					//extra:{
+					//	scene: ex
+					//}
+				};
+				if(message) {
+					msg = message;
+				}
+				ex && (msg.extra = {
+					scene: ex
+				});
+				share_message.send(msg, function() {
+					plus.nativeUI.toast("分享成功");
+					plus.nativeUI.closeWaiting();
+					mui.back();
+				}, function(e) {
+//					plus.nativeUI.toast("分享失败" + e.message + '-' + e.code);
+					plus.nativeUI.toast("分享失败");
+					plus.nativeUI.closeWaiting();
+				});
+				//安卓不会触发 resume 事件，在分享触发后关闭分享框
+				//				setTimeout(function(){
+				//					mui.back();
+				//					plus.nativeUI.closeWaiting();
+				//				},5000)
+			});
+			btnCancel = document.getElementById('cancel');
+			btnCancel.addEventListener('tap', function() {
+				//				console.log('btnCancel');
+				mui.back();
+			}, false)
+			mui.back = function() {
+				self.hide();
+				if(opner.parent()) {
+					opner.parent().setStyle({
+						mask: 'none'
+					});
+				}
+			}
+		</script>
+	</body>
+
+</html>

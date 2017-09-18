@@ -1,0 +1,1378 @@
+{
+	"index.html": {
+		"resources": [
+			"css/index.css",
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"home.html",
+			"fonts/mui.ttf",
+			"pages/home.html",
+			"js/app.js",
+			"css/iconfont.css",
+			"fonts/iconfont.ttf",
+			"css/reset.css",
+			"pages/message.html",
+			"js/index.js",
+			"js/init.js",
+			"pages/template.html",
+			"pages/home/home.html",
+			"pages/message/message.html",
+			"pages/found/found.html",
+			"pages/mine/mine.html"
+		],
+		"refer": [
+			"home.html",
+			"pages/message.html",
+			"pages/home.html",
+			"pages/setting.html",
+			"pages/found.html",
+			"pages/mine.html",
+			"pages/login.html",
+			"pages/classDetail.html",
+			"pages/template.html",
+			"pages/classList.html",
+			"pages/teacherClass/teacherClass.html",
+			"pages/found/found.html",
+			"pages/mine/mine.html",
+			"pages/message/message.html",
+			"pages/home/home.html",
+			"pages/classDetail/classDetail.html",
+			"pages/setting/setting.html",
+			"pages/login/login.html",
+			"pages/classList/classList.html",
+			"pages/languageTest/languageTestOne.html",
+			"pages/languageTest/languageTest.html",
+			"pages/components/guidance.html",
+			"pages/register/register.html",
+			"pages/_learnChinese/learnCnMain/learnCnMain.html",
+			"pages/m_learnChinese/learnCnMain/learnCnMain.html",
+			"pages/a_learnChinese/learnCnMain/learnCnMain.html",
+			"pages/components/shareView.html"
+		]
+	},
+	"home.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/mui.min.css"
+		],
+		"refer": []
+	},
+	"pages/home.html": {
+		"resources": [
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"pages/list1.html",
+			"js/vue.js",
+			"/pages/list1.html",
+			"pages/list3.html",
+			"pages/list2.html",
+			"js/app.js",
+			"pages/js/home.js",
+			"css/index.css",
+			"pages/css/home.css",
+			"css/reset.css",
+			"js/init.js",
+			"pages/js/classDetail.js",
+			"css/iconfont.css",
+			"fonts/iconfont.ttf",
+			"images/yinpin.png",
+			"images/more.png",
+			"pages/classDetail.html"
+		],
+		"refer": [
+			"pages/list1.html",
+			"/pages/list1.html",
+			"pages/template.html",
+			"pages/list3.html",
+			"pages/list2.html",
+			"pages/blank.html",
+			"pages/classDetail.html",
+			"pages/classList.html",
+			"pages/teacherClass.html",
+			"pages/login.html",
+			"pages/setting.html",
+			"pages/message.html"
+		]
+	},
+	"pages/template.html": {
+		"resources": [
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"css/index.css",
+			"css/reset.css",
+			"css/iconfont.css",
+			"images/share-icon.png",
+			"images/loading.png"
+		],
+		"refer": []
+	},
+	"pages/list1.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"js/app.js",
+			"pages/list1.html"
+		],
+		"refer": [
+			"pages/list1.html"
+		]
+	},
+	"pages/list2.html": {
+		"resources": [
+			"js/app.js",
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"pages/list1.html",
+			"pages/blank.html"
+		],
+		"refer": [
+			"pages/template.html",
+			"pages/list3.html",
+			"pages/list1.html",
+			"pages/blank.html"
+		]
+	},
+	"pages/message.html": {
+		"resources": [
+			"js/app.js",
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"pages/js/message.js",
+			"css/index.css",
+			"js/vue.js",
+			"js/init.js",
+			"pages/css/message.css",
+			"css/iconfont.css",
+			"fonts/iconfont.ttf",
+			"css/reset.css"
+		],
+		"refer": [
+			"pages/template.html",
+			"pages/classList.html",
+			"pages/classDetail.html",
+			"pages/login.html",
+			"pages/teacherClass.html"
+		]
+	},
+	"pages/found.html": {
+		"resources": [
+			"pages/js/found.js",
+			"js/app.js",
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"pages/css/found.css",
+			"css/index.css",
+			"js/init.js",
+			"css/iconfont.css",
+			"css/reset.css",
+			"images/third.png",
+			"images/first.png",
+			"images/second.png",
+			"js/vue.js"
+		],
+		"refer": [
+			"pages/template.html",
+			"pages/classDetail.html",
+			"pages/classList.html"
+		]
+	},
+	"pages/mine.html": {
+		"resources": [
+			"js/app.js",
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"images/setting.png",
+			"images/tianjia.png",
+			"pages/js/mine.js",
+			"css/iconfont.css",
+			"images/xiaoqian.png",
+			"pages/css/mine.css",
+			"css/reset.css",
+			"images/tag2.png",
+			"images/tag.png",
+			"images/book.png",
+			"css/index.css",
+			"js/vue.js",
+			"js/init.js",
+			"js/util.js"
+		],
+		"refer": [
+			"pages/template.html"
+		]
+	},
+	"pages/blank.html": {
+		"resources": [
+			"pages/list1.html"
+		],
+		"refer": [
+			"pages/list1.html"
+		]
+	},
+	"pages/classDetail.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"js/app.js",
+			"pages/js/classDetail.js",
+			"css/index.css",
+			"js/vue.js",
+			"js/init.js",
+			"css/reset.css",
+			"css/iconfont.css",
+			"pages/css/classDetail.css",
+			"images/4start.png",
+			"images/5start.png",
+			"images/3start.png",
+			"images/1start.png",
+			"images/2start.png",
+			"images/greeA.png",
+			"images/greyA.png",
+			"/images/greeB.png",
+			"images/greeB.png",
+			"images/yuan.png",
+			"images/greyB.png",
+			"images/nostar.png",
+			"/images/5start.png",
+			"images/star_normal.png",
+			"images/star.png",
+			"images/noCommentImg.png",
+			"pages/home.html"
+		],
+		"refer": [
+			"pages/template.html",
+			"pages/classDesc.html",
+			"pages/audioPlayer.html",
+			"pages/buyClass.html",
+			"pages/login.html",
+			"pages/home.html"
+		]
+	},
+	"pages/classList.html": {
+		"resources": [
+			"css/index.css",
+			"js/app.js",
+			"js/mui.min.js",
+			"js/init.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"css/reset.css",
+			"images/classList/icon_orangeline.png",
+			"pages/js/classList.js",
+			"pages/css/classList.css",
+			"images/classList/img_hot.png",
+			"images/classList/wujieguo.png",
+			"fonts/mui.ttf",
+			"js/vue.js",
+			"fonts/iconfont.ttf"
+		],
+		"refer": [
+			"pages/template.html"
+		]
+	},
+	"pages/teacherClass.html": {
+		"resources": [
+			"pages/css/teacherClass.css",
+			"css/index.css",
+			"js/app.js",
+			"js/vue.js",
+			"js/mui.min.js",
+			"pages/js/teacherClass.js",
+			"js/init.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"css/reset.css"
+		],
+		"refer": [
+			"pages/classDetail.html",
+			"pages/template.html"
+		]
+	},
+	"pages/classDesc.html": {
+		"resources": [
+			"images/play/bg_record_bar.png",
+			"images/play/duihuakuang.png",
+			"images/play/ic_recording.png",
+			"pages/css/classDesc.css",
+			"images/play/ic_playing.png",
+			"images/play/ic_record.png",
+			"pages/js/classDesc.js",
+			"images/play/ic_play.png",
+			"images/play/icon_dancizhushi.png",
+			"images/play/ic_re_record_disable.png",
+			"images/play/ic_passage_play.png",
+			"js/app.js",
+			"js/init.js",
+			"css/index.css",
+			"js/vue.js",
+			"js/mui.min.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"css/reset.css",
+			"fonts/Zawgyi-One-20051130.ttf",
+			"images/play/hadrecord.png",
+			"images/play/img_boy.png",
+			"images/play/img_girl.png",
+			"images/play/ic_passage_pause.png",
+			"images/play/icon_change_volume.png",
+			"images/play/ic_re_record.png",
+			"pages/buyClass.html"
+		],
+		"refer": [
+			"pages/template.html",
+			"pages/dictionary.html",
+			"pages/buyClass.html"
+		]
+	},
+	"pages/dictionary.html": {
+		"resources": [
+			"css/index.css",
+			"pages/css/classDesc.css",
+			"js/vue.js",
+			"js/mui.min.js",
+			"js/init.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"css/reset.css",
+			"pages/js/dictionary.js",
+			"pages/css/dictionary.css",
+			"js/app.js",
+			"fonts/Zawgyi-One-20051130.ttf",
+			"images/play/bofang.png",
+			"images/play/icon_normal_volume.png",
+			"images/play/icon_change_volume.png",
+			"images/play/zanting.png"
+		],
+		"refer": []
+	},
+	"pages/login.html": {
+		"resources": [
+			"pages/css/login.css",
+			"images/logo.png",
+			"pages/js/login.js",
+			"images/weixin.png",
+			"pages/js/login_app.js",
+			"js/mui.enterfocus.js",
+			"css/index.css",
+			"js/app.js",
+			"js/vue.js",
+			"js/mui.min.js",
+			"js/init.js",
+			"css/mui.min.css",
+			"css/iconfont.css",
+			"css/reset.css"
+		],
+		"refer": [
+			"pages/template.html"
+		]
+	},
+	"pages/audioPlayer.html": {
+		"resources": [
+			"images/aduio/shangyishou.png",
+			"pages/js/audioPlayer.js",
+			"images/aduio/bofang.png",
+			"pages/css/audioPlayer.css",
+			"images/aduio/xiayishou.png",
+			"images/aduio/zanting.png",
+			"js/app.js",
+			"js/init.js",
+			"css/index.css",
+			"js/vue.js",
+			"js/mui.min.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"css/reset.css"
+		],
+		"refer": []
+	},
+	"pages/setting.html": {
+		"resources": [
+			"pages/css/seeting.css",
+			"pages/js/setting.js",
+			"js/app.js",
+			"js/vue.js",
+			"js/mui.min.js",
+			"js/init.js",
+			"css/mui.min.css"
+		],
+		"refer": [
+			"pages/template.html",
+			"pages/about.html"
+		]
+	},
+	"pages/buyClass.html": {
+		"resources": [
+			"pages/css/buyClass.css",
+			"pages/js/buyClass.js",
+			"css/index.css",
+			"js/app.js",
+			"js/vue.js",
+			"js/mui.min.js",
+			"js/init.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"css/reset.css",
+			"js/mui.picker.min.js",
+			"pages/js/area.js",
+			"css/mui.picker.min.css",
+			"images/pay/wxzhifu.png",
+			"images/pay/applepay.png",
+			"images/pay/zhifubao.png"
+		],
+		"refer": []
+	},
+	"pages/about.html": {
+		"resources": [
+			"pages/js/about.js",
+			"images/qianyujielogo.png",
+			"pages/css/about.css"
+		],
+		"refer": [
+			"pages/template.html"
+		]
+	},
+	"pages/teacherClass/teacherClass.html": {
+		"resources": [
+			"js/vue.min.js",
+			"pages/teacherClass/teacherClass.js",
+			"pages/teacherClass/teacherClass.css",
+			"css/index.css",
+			"js/app.js",
+			"js/mui.min.js",
+			"js/init.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"css/reset.css"
+		],
+		"refer": [
+			"pages/template.html",
+			"pages/classDetail/classDetail.html"
+		]
+	},
+	"pages/classDetail/classDetail.html": {
+		"resources": [
+			"images/4start.png",
+			"pages/classDetail/classDetail.css",
+			"images/noCommentImg.png",
+			"images/5start.png",
+			"images/3start.png",
+			"images/star.png",
+			"images/yuan.png",
+			"images/nostar.png",
+			"images/1start.png",
+			"images/star_normal.png",
+			"pages/classDetail/classDetail.js",
+			"images/2start.png",
+			"images/greeB.png",
+			"images/greeA.png",
+			"js/vue.min.js",
+			"images/greyA.png",
+			"images/weixin-share .png",
+			"images/qq.png",
+			"images/wechat_share.png",
+			"images/wechat_moment.png",
+			"images/weixin-logo.png",
+			"css/iconfont.css",
+			"css/reset.css",
+			"js/app.js",
+			"js/init.js",
+			"css/index.css",
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"images/qianyujielogo.png",
+			"images/greyB.png",
+			"pages/a_learnChinese/learnCnMain/learnCnMain.html"
+		],
+		"refer": [
+			"pages/template.html",
+			"pages/buyClass/buyClass.html",
+			"pages/classDesc/classDesc.html",
+			"pages/audioPlayer/audioPlayer.html",
+			"pages/languageTest/languageTestOne.html",
+			"pages/login/login.html",
+			"pages/components/shareView.html",
+			"pages/a_learnChinese/learnCnMain/learnCnMain.html"
+		]
+	},
+	"pages/buyClass/buyClass.html": {
+		"resources": [
+			"js/mui.picker.min.js",
+			"images/pay/wxzhifu.png",
+			"pages/buyClass/buyClass.css",
+			"pages/buyClass/area.js",
+			"pages/buyClass/buyClass.js",
+			"images/pay/applepay.png",
+			"css/mui.picker.min.css",
+			"images/pay/zhifubao.png",
+			"images/pay/no_select.png",
+			"images/pay/nh_select.png",
+			"js/app.js",
+			"js/init.js",
+			"js/vue.min.js",
+			"css/index.css",
+			"js/mui.min.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"css/reset.css",
+			"pages/login/login.html"
+		],
+		"refer": [
+			"pages/login/login.html"
+		]
+	},
+	"pages/classDesc/classDesc.html": {
+		"resources": [
+			"pages/classDesc/classDesc.js",
+			"images/play/bg_record_bar.png",
+			"images/play/duihuakuang.png",
+			"fonts/Zawgyi-One-20051130.ttf",
+			"images/play/ic_recording.png",
+			"images/play/ic_playing.png",
+			"images/play/ic_re_record_disable.png",
+			"pages/classDesc/classDesc.css",
+			"images/play/ic_record.png",
+			"images/play/ic_passage_play.png",
+			"images/play/ic_play.png",
+			"images/play/icon_dancizhushi.png",
+			"images/play/icon_change_volume.png",
+			"images/play/img_boy.png",
+			"images/play/img_girl.png",
+			"images/play/ic_passage_pause.png",
+			"js/app.js",
+			"js/init.js",
+			"js/vue.min.js",
+			"css/index.css",
+			"js/mui.min.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"css/reset.css",
+			"images/play/ic_re_record.png",
+			"pages/buyClass/buyClass.html",
+			"images/play/hadrecord.png",
+			"js/zy.media.min.js",
+			"css/zy.media.min.css"
+		],
+		"refer": [
+			"pages/template.html",
+			"pages/dictionary/dictionary.html",
+			"pages/buyClass/buyClass.html"
+		]
+	},
+	"pages/dictionary/dictionary.html": {
+		"resources": [
+			"images/play/bofang.png",
+			"pages/dictionary/dictionary.css",
+			"pages/dictionary/dictionary.js",
+			"images/play/icon_normal_volume.png",
+			"images/play/zanting.png",
+			"css/index.css",
+			"js/app.js",
+			"js/mui.min.js",
+			"js/init.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"js/vue.min.js",
+			"css/reset.css",
+			"fonts/Zawgyi-One-20051130.ttf",
+			"images/play/icon_change_volume.png"
+		],
+		"refer": []
+	},
+	"pages/found/found.html": {
+		"resources": [
+			"pages/found/found.css",
+			"pages/found/found.js",
+			"images/third.png",
+			"images/first.png",
+			"images/second.png",
+			"css/index.css",
+			"js/app.js",
+			"js/vue.js",
+			"js/mui.min.js",
+			"js/init.js",
+			"css/mui.min.css",
+			"css/iconfont.css",
+			"css/reset.css",
+			"js/vue.min.js"
+		],
+		"refer": []
+	},
+	"pages/mine/mine.html": {
+		"resources": [
+			"images/tag2.png",
+			"pages/mine/mine.js",
+			"images/setting.png",
+			"js/util.js",
+			"pages/mine/mine.css",
+			"images/xiaoqian.png",
+			"images/book.png",
+			"images/tianjia.png",
+			"images/tag.png",
+			"js/app.js",
+			"js/init.js",
+			"css/index.css",
+			"js/vue.js",
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"css/iconfont.css",
+			"css/reset.css",
+			"js/vue.min.js"
+		],
+		"refer": []
+	},
+	"pages/message/message.html": {
+		"resources": [
+			"pages/message/message.css",
+			"pages/message/message.js",
+			"fonts/iconfont.ttf",
+			"css/iconfont.css",
+			"css/reset.css",
+			"css/index.css",
+			"js/app.js",
+			"js/vue.js",
+			"js/mui.min.js",
+			"js/init.js",
+			"css/mui.min.css",
+			"js/vue.min.js"
+		],
+		"refer": []
+	},
+	"pages/home/home.html": {
+		"resources": [
+			"pages/home/home.css",
+			"js/vue.js",
+			"pages/home/home.js",
+			"images/yinpin.png",
+			"images/more.png",
+			"fonts/iconfont.ttf",
+			"css/index.css",
+			"js/app.js",
+			"js/mui.min.js",
+			"js/init.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"css/reset.css",
+			"js/vue.min.js",
+			"images/learn.png"
+		],
+		"refer": [
+			"pages/template.html",
+			"pages/classDetail/classDetail.html",
+			"pages/login/login.html",
+			"pages/teacherClass/teacherClass.html",
+			"pages/_learnChinese/learnCnMain/learnCnMain.html",
+			"pages/setting/setting.html",
+			"pages/m_learnChinese/learnCnMain/learnCnMain.html",
+			"pages/a_learnChinese/learnCnMain/learnCnMain.html",
+			"pages/demolist/demolist.html"
+		]
+	},
+	"pages/classList/classList.html": {
+		"refer": [
+			"pages/template.html",
+			"pages/classDetail/classDetail.html"
+		],
+		"resources": [
+			"images/classList/icon_orangeline.png",
+			"images/classList/wujieguo.png",
+			"pages/classList/classList.css",
+			"pages/classList/classList.js",
+			"images/classList/img_hot.png",
+			"js/app.js",
+			"js/init.js",
+			"css/index.css",
+			"js/vue.js",
+			"js/mui.min.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"css/reset.css",
+			"fonts/iconfont.ttf",
+			"fonts/mui.ttf"
+		]
+	},
+	"pages/audioPlayer/audioPlayer.html": {
+		"resources": [
+			"images/aduio/shangyishou.png",
+			"pages/audioPlayer/audioPlayer.js",
+			"images/aduio/bofang.png",
+			"images/aduio/xiayishou.png",
+			"images/aduio/zanting.png",
+			"pages/audioPlayer/audioPlayer.css",
+			"js/app.js",
+			"js/init.js",
+			"css/index.css",
+			"js/vue.js",
+			"js/mui.min.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"css/reset.css"
+		],
+		"refer": []
+	},
+	"pages/setting/setting.html": {
+		"resources": [
+			"pages/setting/seeting.css",
+			"pages/setting/setting.js",
+			"css/index.css",
+			"js/app.js",
+			"js/vue.js",
+			"js/mui.min.js",
+			"js/init.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"css/reset.css"
+		],
+		"refer": [
+			"pages/template.html",
+			"pages/feedback/feedback.html",
+			"pages/about/about.html",
+			"pages/login/login.html"
+		]
+	},
+	"pages/login/login.html": {
+		"resources": [
+			"images/logo.png",
+			"pages/login/login.js",
+			"pages/login/login.css",
+			"pages/login/login_app.js",
+			"images/weixin.png",
+			"js/mui.enterfocus.js",
+			"js/vue.js",
+			"css/index.css",
+			"js/app.js",
+			"js/mui.min.js",
+			"js/init.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"css/reset.css",
+			"images/visitor.png"
+		],
+		"refer": [
+			"pages/template.html",
+			"pages/register/register.html"
+		]
+	},
+	"pages/languageTest/languageTestOne.html": {
+		"resources": [
+			"pages/languageTest/languageTestOne.js",
+			"images/languageTest/qyj_logo.png",
+			"js/vue.min.js",
+			"pages/languageTest/languageTestOne.css",
+			"css/index.css",
+			"js/app.js",
+			"js/mui.min.js",
+			"js/init.js",
+			"fonts/mui.ttf",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"css/reset.css",
+			"pages/classDesc/classDesc.html"
+		],
+		"refer": [
+			"pages/template.html",
+			"pages/languageTest/languageTest.html",
+			"pages/classDesc/classDesc.html"
+		]
+	},
+	"pages/languageTest/languageTest.html": {
+		"resources": [
+			"images/languageTest/background.png",
+			"pages/languageTest/languageTest.js",
+			"images/languageTest/addscore.png",
+			"images/languageTest/icon_false.png",
+			"images/languageTest/icon_voice.png",
+			"images/languageTest/yuanjiao.png",
+			"images/languageTest/icon_true.png",
+			"pages/languageTest/languageTest.css",
+			"js/app.js",
+			"js/init.js",
+			"css/index.css",
+			"js/vue.js",
+			"js/mui.min.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"css/reset.css",
+			"js/vue.min.js"
+		],
+		"refer": [
+			"pages/template.html",
+			"pages/languageTest/languageTestThree.html",
+			"pages/_learnChinese/testStart/testStart.html",
+			"pages/a_learnChinese/testStart/testStart.html"
+		]
+	},
+	"pages/languageTest/languageTestThree.html": {
+		"resources": [
+			"images/languageTest/grey_arc3.png",
+			"images/languageTest/orange_arc2.png",
+			"images/languageTest/icon_bord.png",
+			"images/languageTest/white_mask.png",
+			"images/languageTest/grey_mask.png",
+			"pages/languageTest/languageTestThree.js",
+			"images/qianyujielogo.png",
+			"pages/languageTest/languageTestThree.css",
+			"js/app.js",
+			"js/init.js",
+			"css/index.css",
+			"js/vue.js",
+			"js/mui.min.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"css/reset.css",
+			"images/languageTest/qyj_logo.png"
+		],
+		"refer": [
+			"pages/template.html",
+			"pages/languageTest/languageTestOne.html"
+		]
+	},
+	"pages/components/shareView.html": {
+		"resources": [
+			"css/index.css",
+			"images/wechat_share.png",
+			"js/mui.min.js",
+			"images/wechat_moment.png",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"images/qq.png",
+			"css/reset.css"
+		],
+		"refer": []
+	},
+	"pages/components/guidance.html": {
+		"resources": [
+			"images/guidance/guide2.jpg",
+			"images/guidance/guide4.jpg",
+			"images/guidance/guide3.jpg",
+			"images/guidance/guide1.jpg",
+			"js/app.js",
+			"js/mui.min.js",
+			"css/mui.min.css"
+		],
+		"refer": []
+	},
+	"pages/feedback/feedback.html": {
+		"resources": [
+			"pages/feedback/feedback.js",
+			"pages/feedback/feedback.css",
+			"css/index.css",
+			"js/app.js",
+			"js/vue.js",
+			"js/mui.min.js",
+			"js/init.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"css/reset.css",
+			"fonts/mui.ttf"
+		],
+		"refer": [
+			"pages/template.html"
+		]
+	},
+	"pages/about/about.html": {
+		"resources": [
+			"css/index.css",
+			"js/app.js",
+			"pages/about/about.js",
+			"js/vue.js",
+			"js/mui.min.js",
+			"js/init.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"images/qianyujielogo.png",
+			"css/reset.css",
+			"pages/about/about.css"
+		],
+		"refer": [
+			"pages/template.html"
+		]
+	},
+	"pages/_learnChinese/learnCnMain/learnCnMain.html": {
+		"resources": [
+			"images/learnsCn/btn_search.png",
+			"/images/learnsCn/btn_note.png",
+			"pages/_learnChinese/learnCnMain/learnCnMain.css",
+			"js/mui.picker.min.js",
+			"pages/_learnChinese/learnCnMain/learnCnMain.js",
+			"css/mui.picker.min.css",
+			"images/learnsCn/btn-children.png",
+			"js/app.js",
+			"js/init.js",
+			"js/vue.min.js",
+			"css/index.css",
+			"js/mui.min.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"css/reset.css",
+			"images/learnsCn/btn-foreigner.png",
+			"images/learnsCn/btn-primary.png"
+		],
+		"refer": [
+			"pages/template.html",
+			"pages/_learnChinese/learnCnIndex/learnCnIndex.html",
+			"pages/login/login.html",
+			"pages/_learnChinese/learnCnLevelList/levelList.html",
+			"pages/_learnChinese/learnSearch/learnSearch.html",
+			"pages/_learnChinese/learnNotebook/notebook.html"
+		]
+	},
+	"pages/_learnChinese/learnCnIndex/learnCnIndex.html": {
+		"resources": [
+			"images/learnsCn/children.png",
+			"images/learnsCn/bird-star.png",
+			"pages/_learnChinese/learnCnIndex/learnCnIndex.js",
+			"images/learnsCn/primary.png",
+			"images/learnsCn/btn-select-n.png",
+			"images/learnsCn/foreigner.png",
+			"images/learnsCn/btn-select-t.png",
+			"pages/_learnChinese/learnCnIndex/learnCnIndex.css",
+			"js/app.js",
+			"js/init.js",
+			"js/vue.min.js",
+			"css/index.css",
+			"js/mui.min.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"css/reset.css"
+		],
+		"refer": []
+	},
+	"pages/_learnChinese/learnCnLevelList/levelList.html": {
+		"resources": [
+			"pages/_learnChinese/learnCnLevelList/levelList.js",
+			"css/index.css",
+			"js/app.js",
+			"js/mui.min.js",
+			"js/init.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"js/vue.min.js",
+			"css/mui.picker.min.css",
+			"css/reset.css",
+			"images/learnsCn/background.jpg",
+			"pages/_learnChinese/learnCnLevelList/levelList.css",
+			"images/learnsCn/suo.png",
+			"images/learnsCn/levelbrid.png"
+		],
+		"refer": [
+			"pages/template.html",
+			"pages/_learnChinese/learnCnLevel/learnCnLevel.html",
+			"pages/_learnChinese/learnCnFontDesc/fontDesc.html"
+		]
+	},
+	"pages/_learnChinese/learnSearch/learnSearch.html": {
+		"resources": [
+			"pages/_learnChinese/learnSearch/learnSearch.css",
+			"images/learnsCn/img_camera.png",
+			"pages/_learnChinese/learnSearch/learnSearch.js",
+			"fonts/iconfont.ttf",
+			"js/app.js",
+			"js/mui.picker.min.js",
+			"js/init.js",
+			"js/vue.min.js",
+			"css/index.css",
+			"js/mui.min.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"css/mui.picker.min.css",
+			"css/reset.css",
+			"images/learnsCn/img_time.png"
+		],
+		"refer": [
+			"pages/template.html",
+			"pages/_learnChinese/learnCnFontDesc/fontDesc.html"
+		]
+	},
+	"pages/_learnChinese/learnNotebook/notebook.html": {
+		"resources": [
+			"pages/_learnChinese/learnNotebook/notebook.js",
+			"pages/_learnChinese/learnNotebook/notebook.css",
+			"images/learnsCn/btn-select-n.png",
+			"css/index.css",
+			"js/app.js",
+			"js/mui.picker.min.js",
+			"js/mui.min.js",
+			"js/init.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"js/vue.min.js",
+			"css/mui.picker.min.css",
+			"css/reset.css",
+			"images/learnsCn/btn-select-t.png"
+		],
+		"refer": [
+			"pages/template.html",
+			"pages/_learnChinese/learnCnFontDesc/fontDesc.html"
+		]
+	},
+	"pages/_learnChinese/learnCnFontDesc/fontDesc.html": {
+		"resources": [
+			"images/wujieguo.png",
+			"pages/_learnChinese/learnCnFontDesc/fontDesc.js",
+			"images/learnsCn/bg_big.png",
+			"images/learnsCn/bg_small.png",
+			"images/learnsCn/arrow_left.png",
+			"images/learnsCn/arrow_right.png",
+			"images/learnsCn/font-play.png",
+			"pages/_learnChinese/learnCnFontDesc/fontDesc.css",
+			"images/learnsCn/stopping.png",
+			"images/learnsCn/zaogao.png",
+			"images/learnsCn/shengchi_add.png",
+			"images/learnsCn/font-stop.png",
+			"images/learnsCn/shengchi_had.png",
+			"images/learnsCn/gongxi.png",
+			"images/learnsCn/nh_select.png",
+			"js/app.js",
+			"js/init.js",
+			"js/vue.min.js",
+			"css/index.css",
+			"js/mui.min.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"css/reset.css",
+			"images/learnsCn/playing.png"
+		],
+		"refer": [
+			"pages/template.html",
+			"pages/languageTest/languageTest.html"
+		]
+	},
+	"pages/_learnChinese/testStart/testStart.html": {
+		"resources": [
+			"images/learnsCn/bg_chenggong.png",
+			"pages/_learnChinese/testStart/testStart.css",
+			"images/learnsCn/start_test_bg.png",
+			"images/learnsCn/bg_shibai.png",
+			"pages/_learnChinese/testStart/testStart.js",
+			"js/app.js",
+			"js/init.js",
+			"js/vue.min.js",
+			"css/index.css",
+			"js/mui.min.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"css/reset.css"
+		],
+		"refer": [
+			"pages/template.html",
+			"pages/languageTest/languageTest.html"
+		]
+	},
+	"pages/_learnChinese/learnCnLevel/learnCnLevel.html": {
+		"resources": [
+			"pages/_learnChinese/learnCnLevel/learnCnLevel.js",
+			"images/learnsCn/bg01.png",
+			"pages/_learnChinese/learnCnLevel/learnCnLevel.css",
+			"css/index.css",
+			"js/app.js",
+			"js/mui.min.js",
+			"js/init.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"js/vue.min.js",
+			"css/mui.picker.min.css",
+			"css/reset.css"
+		],
+		"refer": [
+			"pages/template.html",
+			"pages/_learnChinese/learnCnFontDesc/fontDesc.html"
+		]
+	},
+	"pages/register/register.html": {
+		"resources": [
+			"pages/register/register.css",
+			"/js/app.js",
+			"pages/register/register.js",
+			"js/md5.js"
+		],
+		"refer": [
+			"pages/template.html"
+		]
+	},
+	"pages/m_learnChinese/learnCnMain/learnCnMain.html": {
+		"resources": [
+			"pages/m_learnChinese/learnCnMain/learnCnMain.js",
+			"images/learnsCn/btn_search.png",
+			"/images/learnsCn/btn_note.png",
+			"js/mui.picker.min.js",
+			"css/mui.picker.min.css",
+			"pages/m_learnChinese/learnCnMain/learnCnMain.css",
+			"images/learnsCn/btn-foreigner.png",
+			"images/learnsCn/btn-children.png",
+			"images/learnsCn/btn-primary.png"
+		],
+		"refer": [
+			"pages/template.html",
+			"pages/m_learnChinese/learnCnLevelList/levelList.html",
+			"pages/m_learnChinese/learnSearch/learnSearch.html",
+			"pages/m_learnChinese/learnNotebook/notebook.html"
+		]
+	},
+	"pages/m_learnChinese/learnCnLevelList/levelList.html": {
+		"resources": [
+			"images/learnsCn/levelbrid.png",
+			"pages/m_learnChinese/learnCnLevelList/levelList.css",
+			"images/learnsCn/suo.png",
+			"pages/m_learnChinese/learnCnLevelList/levelList.js",
+			"images/learnsCn/background.jpg"
+		],
+		"refer": [
+			"pages/template.html",
+			"pages/m_learnChinese/learnCnFontDesc/fontDesc.html"
+		]
+	},
+	"pages/m_learnChinese/learnSearch/learnSearch.html": {
+		"resources": [
+			"images/learnsCn/img_camera.png",
+			"pages/m_learnChinese/learnSearch/learnSearch.js",
+			"pages/m_learnChinese/learnSearch/learnSearch.css",
+			"js/app.js",
+			"js/mui.picker.min.js",
+			"js/init.js",
+			"js/vue.min.js",
+			"css/index.css",
+			"js/mui.min.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"fonts/iconfont.ttf",
+			"css/mui.picker.min.css",
+			"css/reset.css"
+		],
+		"refer": [
+			"pages/template.html"
+		]
+	},
+	"pages/m_learnChinese/learnCnFontDesc/fontDesc.html": {
+		"resources": [
+			"images/wujieguo.png",
+			"images/learnsCn/bg_big.png",
+			"images/learnsCn/bg_small.png",
+			"images/learnsCn/nh_select.png",
+			"images/learnsCn/arrow_left.png",
+			"images/learnsCn/arrow_right.png",
+			"images/learnsCn/font-play.png",
+			"images/learnsCn/stopping.png",
+			"pages/m_learnChinese/learnCnFontDesc/fontDesc.css",
+			"images/learnsCn/zaogao.png",
+			"images/learnsCn/shengchi_add.png",
+			"images/learnsCn/font-stop.png",
+			"pages/m_learnChinese/learnCnFontDesc/fontDesc.js",
+			"images/learnsCn/shengchi_had.png",
+			"images/learnsCn/gongxi.png"
+		],
+		"refer": [
+			"pages/template.html",
+			"pages/languageTest/languageTest.html"
+		]
+	},
+	"pages/m_learnChinese/learnNotebook/notebook.html": {
+		"resources": [
+			"pages/m_learnChinese/learnNotebook/notebook.css",
+			"pages/m_learnChinese/learnNotebook/notebook.js",
+			"js/mui.picker.min.js"
+		],
+		"refer": [
+			"pages/template.html"
+		]
+	},
+	"pages/a_learnChinese/learnCnMain/learnCnMain.html": {
+		"resources": [
+			"images/learnsCn/btn_search.png",
+			"/images/learnsCn/btn_note.png",
+			"js/mui.picker.min.js",
+			"pages/a_learnChinese/learnCnMain/learnCnMain.css",
+			"pages/a_learnChinese/learnCnMain/learnCnMain.js",
+			"css/mui.picker.min.css",
+			"images/learnsCn/btn-foreigner.png",
+			"images/learnsCn/btn-children.png",
+			"images/learnsCn/btn-primary.png",
+			"js/app.js",
+			"js/init.js",
+			"js/vue.min.js",
+			"css/index.css",
+			"js/mui.min.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"css/reset.css",
+			"pages/classDetail/classDetail.html"
+		],
+		"refer": [
+			"pages/template.html",
+			"pages/a_learnChinese/learnSearch/learnSearch.html",
+			"pages/a_learnChinese/learnNotebook/notebook.html",
+			"pages/a_learnChinese/learnCnLevelList/levelList.html",
+			"pages/a_learnChinese/learnCnIndex/learnCnIndex.html",
+			"pages/login/login.html",
+			"pages/classDetail/classDetail.html"
+		]
+	},
+	"pages/a_learnChinese/learnSearch/learnSearch.html": {
+		"resources": [
+			"pages/a_learnChinese/learnSearch/learnSearch.js",
+			"pages/a_learnChinese/learnSearch/learnSearch.css",
+			"images/learnsCn/img_camera.png",
+			"js/app.js",
+			"js/mui.picker.min.js",
+			"js/init.js",
+			"js/vue.min.js",
+			"css/index.css",
+			"js/mui.min.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"fonts/iconfont.ttf",
+			"css/mui.picker.min.css",
+			"css/reset.css",
+			"images/learnsCn/img_time.png",
+			"js/md5.js"
+		],
+		"refer": [
+			"pages/template.html",
+			"pages/a_learnChinese/learnCnFontDesc/fontDesc.html"
+		]
+	},
+	"pages/a_learnChinese/learnCnFontDesc/fontDesc.html": {
+		"resources": [
+			"images/learnsCn/zaogao.png",
+			"images/learnsCn/shengchi_add.png",
+			"images/wujieguo.png",
+			"images/learnsCn/font-stop.png",
+			"images/learnsCn/bg_big.png",
+			"images/learnsCn/bg_small.png",
+			"pages/a_learnChinese/learnCnFontDesc/fontDesc.js",
+			"images/learnsCn/arrow_right.png",
+			"images/learnsCn/arrow_left.png",
+			"images/learnsCn/shengchi_had.png",
+			"images/learnsCn/font-play.png",
+			"images/learnsCn/gongxi.png",
+			"pages/a_learnChinese/learnCnFontDesc/fontDesc.css",
+			"images/learnsCn/stopping.png",
+			"images/learnsCn/nh_select.png",
+			"js/app.js",
+			"js/init.js",
+			"js/vue.min.js",
+			"css/index.css",
+			"js/mui.min.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"css/reset.css",
+			"images/learnsCn/playing.png",
+			"js/md5.js"
+		],
+		"refer": [
+			"pages/template.html",
+			"pages/languageTest/languageTest.html"
+		]
+	},
+	"pages/a_learnChinese/learnNotebook/notebook.html": {
+		"resources": [
+			"pages/a_learnChinese/learnNotebook/notebook.js",
+			"js/mui.picker.min.js",
+			"css/mui.picker.min.css",
+			"pages/a_learnChinese/learnNotebook/notebook.css",
+			"images/learnsCn/btn-select-n.png",
+			"images/learnsCn/btn-select-t.png",
+			"css/index.css",
+			"js/app.js",
+			"js/mui.min.js",
+			"js/init.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"js/vue.min.js",
+			"css/reset.css"
+		],
+		"refer": [
+			"pages/template.html",
+			"pages/a_learnChinese/learnCnFontDesc/fontDesc.html"
+		]
+	},
+	"pages/a_learnChinese/learnCnLevelList/levelList.html": {
+		"resources": [
+			"images/learnsCn/levelbrid.png",
+			"pages/a_learnChinese/learnCnLevelList/levelList.js",
+			"pages/a_learnChinese/learnCnLevelList/levelList.css",
+			"images/learnsCn/suo.png",
+			"images/learnsCn/background.jpg",
+			"images/learnsCn/bgline1.png",
+			"images/learnsCn/bgline2.png",
+			"images/learnsCn/background2.jpg",
+			"images/learnsCn/background1.jpg",
+			"js/app.js",
+			"js/init.js",
+			"js/vue.min.js",
+			"css/index.css",
+			"js/mui.min.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"css/mui.picker.min.css",
+			"css/reset.css"
+		],
+		"refer": [
+			"pages/template.html",
+			"pages/a_learnChinese/learnCnFontDesc/fontDesc.html",
+			"pages/a_learnChinese/learnCnLevel/learnCnLevel.html"
+		]
+	},
+	"pages/a_learnChinese/learnCnIndex/learnCnIndex.html": {
+		"resources": [
+			"images/learnsCn/children.png",
+			"images/learnsCn/bird-star.png",
+			"pages/a_learnChinese/learnCnIndex/learnCnIndex.css",
+			"images/learnsCn/primary.png",
+			"images/learnsCn/btn-select-n.png",
+			"images/learnsCn/foreigner.png",
+			"images/learnsCn/btn-select-t.png",
+			"pages/a_learnChinese/learnCnIndex/learnCnIndex.js"
+		],
+		"refer": []
+	},
+	"pages/a_learnChinese/learnCnLevel/learnCnLevel.html": {
+		"resources": [
+			"pages/a_learnChinese/learnCnLevel/learnCnLevel.js",
+			"images/learnsCn/bg01.png",
+			"pages/a_learnChinese/learnCnLevel/learnCnLevel.css",
+			"css/index.css",
+			"js/app.js",
+			"js/mui.min.js",
+			"js/init.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"js/vue.min.js",
+			"css/mui.picker.min.css",
+			"css/reset.css"
+		],
+		"refer": [
+			"pages/languageTest/languageTest.html",
+			"pages/template.html",
+			"pages/a_learnChinese/learnCnFontDesc/fontDesc.html"
+		]
+	},
+	"pages/a_learnChinese/testStart/testStart.html": {
+		"resources": [
+			"images/learnsCn/bg_chenggong.png",
+			"pages/a_learnChinese/testStart/testStart.css",
+			"images/learnsCn/start_test_bg.png",
+			"pages/a_learnChinese/testStart/testStart.js",
+			"images/learnsCn/bg_shibai.png",
+			"js/app.js",
+			"js/init.js",
+			"js/vue.min.js",
+			"css/index.css",
+			"js/mui.min.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"css/reset.css"
+		],
+		"refer": [
+			"pages/languageTest/languageTest.html",
+			"pages/template.html"
+		]
+	},
+	"pages/demolist/demolist.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"js/app.js"
+		]
+	}
+}

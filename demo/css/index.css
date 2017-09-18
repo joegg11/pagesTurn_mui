@@ -1,0 +1,87 @@
+@import "reset.css";
+@import url("iconfont.css");
+html{
+	font-size: 50px;
+}
+body{
+	font-family:   "微软雅黑",'pingfang sc heavy',"Microsoft YaHei",arial,;
+	font-size: 14px;
+}
+a{
+	color: #262626;
+}
+span{
+	display: inline-block;
+}
+.flex{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.cf{
+	clear: both;
+}
+.cf::before,
+.cf::after{
+	content: "";
+	width: 0;
+	height: 0;
+	clear: both;
+	z-index: 0;
+}
+/**app.wxss**/
+/*按下样式 -变灰 */
+.press-darker:active{
+  background-color: #DDDDDD;
+}
+/*按下样式 -变暗 */
+.press-transport:active{
+  background-color: rgba(0, 0, 0, 0.1); 
+  opacity: 0.7;
+}
+.invisible{
+  visibility:hidden;
+}
+
+/*语言字体*/
+@font-face {
+	font-family: 'Zawgyi-One';
+	src: url('../fonts/Zawgyi-One-20051130.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.mui-bar.top-bar{
+	background-color: #fa6b11;
+}
+.mui-bar .mui-title{
+	color: #fff;
+}
+.mui-bar-tab .mui-tab-item.mui-active {
+    color: #fa6b11;
+}
+.mui-bar .mui-icon {
+    font-size: 22px;
+}
+/*轮播图*/
+.mui-slider-indicator .mui-indicator {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin: 1px 6px;
+    cursor: pointer;
+    border-radius: 50%;
+    background: rgba(130,130,130,.5);
+    box-shadow: 0 0 1px 1px rgba(130,130,130,.7);
+}
+.mui-slider-indicator .mui-active.mui-indicator {
+    background: #FA6B11;
+}
+
+

@@ -1,0 +1,329 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>外部框架</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link href="../css/index.css" rel="stylesheet" />
+		<style type="text/css">
+			body,
+			html {
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+			}
+			
+			.mui-content {
+				width: 100%;
+				height: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				box-sizing: border-box;
+			}
+			
+			.mui-bar.mui-bar-nav {
+				background: #fa6b11;
+			}
+			
+			.mui-bar .mui-action-back {
+				color: #fff;
+			}
+			
+			.mui-bar.mui-bar-nav .mui-title {
+				color: #fff;
+			}
+			.loading-content{
+				margin-top: -110px;
+			}
+			.loading-text{
+				padding-left: 12px;
+			}
+			.loading-img{
+				width: 80px;
+				height: 80px;
+			}
+			.share-icon {
+				width: 0.4rem;
+				height: 0.4rem;
+				vertical-align: middle;
+			}
+			
+			.share-view {
+				height: 100%;
+				float: right;
+				line-height: 43px;
+				display: none;
+			}
+			.share-view::after{
+				clear: both;
+			}
+			.loading-img{
+			    -webkit-animation: imageAnimation 1.2s linear infinite 0s;
+			    animation: imageAnimation 1.2s linear infinite 0s;
+			    -webkit-backface-visibility: hidden;
+			}
+			@-webkit-keyframes imageAnimation {
+			  0% {
+			  	-webkit-transform: translateY(0px);
+			  }
+			  4% {
+			    -webkit-transform: translateY(3px);
+			  }
+			  22% {
+			    -webkit-transform: translateY(3px) scale(0.95);
+			  }
+			  44% {
+			    -webkit-transform: translateY(4px) scale(1);
+			  }
+			  70% {
+			    -webkit-transform: translateY(2px);
+			  }
+			  100% {
+			  	-webkit-transform: translateY(0px);
+			  }
+			}
+			@keyframes imageAnimation {
+			 0% {
+			  	-webkit-transform: translateY(0px);
+			  }
+			  4% {
+			    -webkit-transform: translateY(3px);
+			  }
+			  22% {
+			    -webkit-transform: translateY(3px) scale(0.95);
+			  }
+			  44% {
+			    -webkit-transform: translateY(4px) scale(1);
+			  }
+			  70% {
+			    -webkit-transform: translateY(2px);
+			  }
+			  100% {
+			  	-webkit-transform: translateY(0px);
+			  }
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav" id="nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" id="btnback"></a>
+			<h1 class="mui-title" id="title"></h1>
+			<!--分享按钮-->
+			<div class="share-view"  id="share" >
+				<img src="../images/share-icon.png" class="share-icon" />
+			</div>
+		</header>
+		<div class="mui-content">
+			<div class="loading-content">
+				<img class="loading-img" src="../images/loading.png"/>
+				<div class='loading-text'>loading...</div>
+			</div>
+		</div>
+
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			(function(window, mui) {
+				mui.init();
+				var navBarBg = '#fa6b11';
+				var navBarColor = '#ffffff';
+				var shares = null; //分享
+				var navBar = document.getElementById("nav");
+				var btnBack = document.getElementById("btnback");
+				var titleElem = document.getElementById("title");
+				var share = document.getElementById("share");
+				var shareView = null ;//分享面板
+				var contentWebview = null,
+					self = null,
+					closeViewId = null,
+					title = null,
+					style = null,
+					secondTopViewId = null;
+
+				mui.plusReady(function() {
+					self = plus.webview.currentWebview();
+					
+					//ios右滑关闭
+					self.addEventListener('popGesture', function(e) {
+						if(e.type == 'end'&& e.result&& e.progress>=40) {
+							mui.back();
+						}
+					}, false);
+					//分享点击蒙层
+					self.addEventListener('maskClick', function(){
+						if(shareView){
+							shareView.hide();
+						}
+						self.setStyle({mask:'none'});
+					},false);
+				});
+				// 自定义事件接收参数修改模板父页面头部
+				window.addEventListener("updateHeader", function(e) {
+					title = e.detail.title;
+					secondTopViewId = e.detail.secondTopViewId;
+					if(e.detail.style) style = e.detail.style;
+					var href = e.detail.target;
+					var aniShow = e.detail.aniShow;
+					titleElem.innerHTML = title;
+					titleElem.className = "mui-title mui-fadein";
+					//修改状态栏颜色
+					if(Object.keys(style).length) {
+						if(style.background) {
+							navBar.style.background = style.background;
+							plus.navigator.setStatusBarBackground(style.background);
+						}
+						if(style.color) {
+							titleElem.style.color = style.color;
+							btnBack.style.color = style.color;
+						}
+					}else{
+						plus.navigator.setStatusBarBackground(navBarBg);
+					}
+					if(mui.os.android && aniShow && parseFloat(mui.os.version) >= 4.4) {
+						if(contentWebview == null) {
+							contentWebview = self.children()[0];
+						}
+						if(contentWebview.getURL() != href) {
+							contentWebview.loadURL(href);
+						} else {
+							contentWebview.show();
+						}
+						setTimeout(function() {
+							self.show(aniShow);
+						}, 10);
+					}
+				});
+
+				window.addEventListener("updateTitle", function(e) {
+					pageTitle = e.detail.title;
+					if(pageTitle && title == '') {
+						titleElem.innerHTML = pageTitle;
+					}
+				});
+				//获取要关闭的预加载下一层页面
+				window.addEventListener("closeLastView", function(e) {
+					closeViewId = e.detail.id;
+					console.log("willclose:" + closeViewId);
+				});
+				//如果是重定向打开的页面关闭是就要直接不关闭而不是hide
+				var isRedirect = null;
+				window.addEventListener("withRedirect", function(e) {
+					if(e.detail.is_redirect){
+						isRedirect = true;
+					}
+				});
+				//显示分享按钮
+				window.addEventListener('canShare', function(e) {
+					if(e.detail.canShare){
+						console.log('canShare');
+						share.style.display = "block";
+						if(!shareView){
+							mui.plusReady(function(){
+								shareView = plus.webview.getWebviewById('shareView')||null;
+								if(!shareView){
+									var ineTime = setInterval(function(){
+										if(shareView) {
+											clearInterval(ineTime);
+											return
+										}
+										shareView = plus.webview.getWebviewById('shareView')||null;
+									},100);
+								}
+							})
+						}
+					}
+				})
+				//触发关闭页面
+				window.addEventListener('closeView', function(e) {
+					var closeNum = e.detail.num - 1;
+					var lastView = self.opener() && self.opener().parent();
+//					console.log('lastView:'+self.opener().id);
+					if(closeNum > 0 && lastView && lastView.id.indexOf('tem_')>=0) {
+						mui.fire(lastView, 'closeView', {
+							num: closeNum
+						});
+					}
+					if(closeNum > 0) {
+						mui.back(0);
+					} else {
+						mui.back();
+					}
+				})
+
+				function closePage() {
+					if(contentWebview == null) {
+						contentWebview = self.children()[0];
+					}
+					self.close();
+					contentWebview.close();
+				}
+				// 返回事件（隐藏模板父页面，并在窗体动画结束后，隐藏共用子页面）
+				mui.back = function(duration) {
+					plus.nativeUI.closeWaiting(); //隐藏加载图标
+					if(style) { //如果设置可导航条样式，推出时候还原
+						if(style.background) {
+							navBar.style.background = navBarBg;
+							plus.navigator.setStatusBarBackground(navBarBg);
+						}
+						if(style.color) {
+							titleElem.style.color = navBarColor;
+							btnBack.style.color = navBarColor;
+						}
+					}
+					var mine = self.children()[0];
+					//获得上级界面的webview
+					var opener = null;
+					if(secondTopViewId) opener = plus.webview.getWebviewById(secondTopViewId);
+					else opener = plus.webview.currentWebview().opener();
+					//关闭当前也前出发当前页的beforeClose事件
+					mui.fire(mine, 'beforeClose');
+					
+					if(duration && duration >= 0) self.hide('auto', duration);
+					else if(duration == 0) self.hide('none', 0);
+					else self.hide('auto');
+					
+					share.style.display = "none";
+					//触发列表界面的自定义事件（showAgain）,从而进行数据刷新
+					mui.fire(opener, 'showAgain',{from:self.children()[0].getURL()});
+					setTimeout(function() {
+						if(closeViewId) { //清理本页面创建的预加载窗口
+							console.log('close:' + closeViewId);
+							plus.webview.close('sub_' + closeViewId, 'none', 0);
+							plus.webview.close('tem_' + closeViewId, 'none', 0);
+							closeViewId = null;
+						}
+						titleElem.className = 'mui-title mui-fadeout';
+						titleElem.innerText = '';
+						if(contentWebview == null) {
+							contentWebview = self.children()[0];
+						}
+						//清理地址
+						if(contentWebview) {
+							if(isRedirect){
+								self.close();
+								contentWebview.close();
+							}else{
+								contentWebview.clear();
+								contentWebview.hide("none");
+							}
+							
+						}
+					}, 100);
+				}
+
+				//分享
+				share.addEventListener('tap', function() {
+					self.setStyle({mask:'rgba(0,0,0,.6)'});
+					if(shareView){
+						shareView.show('slide-in-bottom',300);
+					}
+				});
+				
+			})(window, mui)
+		</script>
+	</body>
+
+</html>

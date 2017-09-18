@@ -1,0 +1,38 @@
+{
+  "pages/components/shareView.html": {
+    "href": "pages/components/shareView.html",
+    "resources": [],
+    "priority": 0
+  },
+  "pages/template.html": {
+    "href": "pages/template.html",
+    "resources": [],
+    "priority": 1
+  },
+  "pages/message/message.html": {
+    "href": "pages/message/message.html",
+    "resources": [],
+    "priority": 2
+  },
+  "pages/found/found.html": {
+    "href": "pages/found/found.html",
+    "resources": [],
+    "priority": 3
+  },
+  "pages/mine/mine.html": {
+    "href": "pages/mine/mine.html",
+    "resources": [],
+    "priority": 4
+  },
+  "pages/home/home.html": {
+    "href": "pages/home/home.html",
+    "resources": [],
+    "priority": 5
+  },
+  "index.html": {
+    "href": "index.html",
+    "resources": [],
+    "refer": [],
+    "priority": 0
+  }
+}
