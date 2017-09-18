@@ -1,7 +1,7 @@
 (function(win, $) {
 	mui.init();
 	var domain = win.config.domain;
-	var op = new win.openPage();
+	var pt = new win.pagesTurn();
 	var vm = new win.Vue({
 		el: '#app',
 		data: {
@@ -23,16 +23,16 @@
 		methods: {
 			toPage:function(e){
 				var id = e.currentTarget.dataset.id;
-				op.open('../demolist/demolist.html','item'+id,{
+				pt.open('../demolist/demolist.html','item'+id,{
 					id:id
 				})
 			}
 		}
 	})
 	$.plusReady(function() {
-		op.create();
+		pt.create();
 	})
-	op.showAgain(function(){
+	pt.showAgain(function(){
 		console.log('home.html is show Again');
 	})
 	

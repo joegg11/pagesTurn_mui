@@ -19,8 +19,8 @@
 		<script src="../../js/app.js"></script>
 		<script type="text/javascript">
 			mui.init()
-			var op = new openPage();
-			op.showPage(function(options){
+			var pt = new pagesTurn();
+			pt.showPage(function(options){
 				var content = document.getElementById('content');
 				content.innerHTML = 'id:'+ options.id;
 			})

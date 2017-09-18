@@ -1,16 +1,16 @@
 /**
- * 页面跳转方法，使用前先要初始化 new openPage();
+ * 页面跳转方法，使用前先要初始化 new pagesTurn();
  * open('url',[title,param]) 打开页面
  * redirectTo('url',[title,param]) 从定向页面
  * @param {String} url 跳转地址
  * @param {String} title 跳转页标题
  * @param {Object} param 传参
  */
-function openPage() {
+function pagesTurn() {
 	this.init();
 }
-openPage.prototype = {
-	constructor: openPage,
+pagesTurn.prototype = {
+	constructor: pagesTurn,
 	init: function() {
 		var self = this;
 		this.name = 'index'
